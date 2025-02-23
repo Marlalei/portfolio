@@ -1,0 +1,92 @@
+{
+"intents": [
+{ 
+"tag": "Greetings-1",
+"patterns": ["Hi There!", "Greetings!", "Hello there!", "Hi!", "Hello!", "Hi", "Hello"],
+"responses": [
+          "Hey There! Is there anything i can help you with?",
+          "Greetings! Is there anything i can help you with?"
+]
+},
+{ 
+"tag": "Greetings-2",
+"patterns": ["Goodmorning!", "Good Morning!", "Morning!", "GM!", "GoodDay!"],
+"responses": [
+          "Good Morning! Is there anything i can help you with?",
+          "What a pleasant morning it is! Is there anything i can help you with?",
+          "Just had a coffee! you are right! what a very good morning it is! Is there anything i can help you with?"
+]
+},
+{ 
+"tag": "Greetings-3",
+"patterns": ["Good Afternoon!", "GoodAfternoon!", "good afternoon it is!", "afty!", "Afternoon!", "gud afternoon"],
+"responses": [
+          "Good Afternoon! Is there anything i can help you with?",
+          "What a pleasant afternoon it is! Is there anything i can help you with?"
+]
+},
+{ 
+"tag": "Greetings-4",
+"patterns": ["Goodevening!", "Good Evening!", "Evening!", "Good eve!", "Gud eve!", "eve"],
+"responses": [
+          "Good Evening! Is there anything i can help you with?",
+          "What a pleasant evening it is! Is there anything i can help you with?"
+]
+},
+{ 
+"tag": "Politeness-1",
+"patterns": ["Thankyou", "thanks", "thankyou very much", "ty", "tnx"],
+"responses": [
+          "Welcome! Is there anything i can help you with?",
+          "Welcome! I'm glad i can help you with! Is there anything else?"
+]
+},
+{ 
+"tag": "Politeness-2",
+"patterns": ["Goodbye", "bye", "talk to you later", "ttyl", "see you later!"],
+"responses": [
+          "Goodbye! Hope to chat with you again soon!",
+          "Goodbye! Lets chat again soon!"
+]
+},
+{ 
+"tag": "Politeness-3",
+"patterns": ["Yes!", "Sure"],
+"responses": [
+          "Great please specify what else do you want to learn?",
+          "Okay! can you please specify what do you want to know?"
+]
+},
+{ 
+"tag": "Politeness-4",
+"patterns": ["Nope", "No", "Nah", "enough"],
+"responses": [
+          "Okay, just message me if there is still you need to know!"
+]
+},
+{ 
+"tag": "Personal-1",
+"patterns": ["What is your name?", "what is your name again?", "what is ur name?", "name?", "what should i call you?"],
+"responses": [
+          "My name is Marla Lei Eudela but you can call me marla!",
+          "My name is Marla Lei Eudela but you can call me marla! Is there anything you want to know?"
+]
+},
+{ 
+"tag": "Personal-2",
+"patterns": ["When is your birthday?", "what is your birthday?", "tell me your birthday", "your bday is?", "tell me about ur birthday!"],
+"responses": [
+          "Sure! My Birthday is January 24, 2000",
+          "My Birthday is January 24,2000, is there anything else you want to learn?"
+]
+},
+{ 
+"tag": "Personal-3",
+"patterns": ["When is your birthplace?", "birth place", "tell me your birthplace", "your birthplace is?", "tell me about ur birth place"],
+"responses": [
+          "Sure! My Birth place is in Roxas City Capiz it is in visayas philippines!, Is there anything you want to know?"
+
+]
+}
+}
+  
