@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import joblib
 import numpy as np
-
+from sklearn import * 
 app = Flask(__name__)
 
 # Load the model, vectorizer, and label encoder
