@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marla Lei | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Marla Lei Eudela</h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="#" id="contact-link">Contact</a></li>
+        <li><a href="{{ url_for('chatai') }}" class="active">ChatAI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero/Profile Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <img src="{{ url_for('static', filename='profilepic.jpeg') }}" alt="Profile Picture" class="profile-img" />
+      <h2 class="hero-caption">I provide personalized, timely, and on-brand copywriting</h2>
+      <div class="social-links">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://web.facebook.com/marlalei.eudela" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="skills-container">
+      <h2 class="section-title">Featured Technical Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item">
+          <i class="fab fa-google"></i>
+          <p>Workspace</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-discord"></i>
+          <p>Discord</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-slack"></i>
+          <p>Slack</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-microsoft"></i>
+          <p>Teams</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-facebook"></i>
+          <p>Meta Suite</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-shopify"></i>
+          <p>Shopify</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <h2 class="section-title">Services</h2>
+    <div class="services-container">
+      <a href="#blogs" class="service-card">
+        <img src="{{ url_for('static', filename='blog.png') }}" alt="Blog Writing">
+        <h3>Blog Writing</h3>
+        <p>Captivating blog posts to elevate your online presence.</p>
+      </a>
+      <a href="#works" class="service-card">
+        <img src="{{ url_for('static', filename='cont.jpg') }}" alt="Content Writing Works">
+        <h3>Content Writing</h3>
+        <p>Expert content crafted for your business needs.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Blogs Section -->
+  <section id="blogs" class="blogs-section">
+    <h2 class="section-title">Blogs</h2>
+    <div class="blogs-container">
+      <div class="blog-card">
+        <img src="{{ url_for('static', filename='blog1.png') }}" alt="Blog 1" />
+        <h3>Short-Form Video Marketing: A Massive Shake-Up To The Social Media Status Quo</h3>
+        <button onclick="window.open('https://emerge.com.ph/short-form-video-marketing-a-massive-shake-up-to-the-social-media-status-quo/', '_blank')">Read Here</button>
+      </div>
+      <div class="blog-card">
+        <img src="{{ url_for('static', filename='blog2.png') }}" alt="Blog 2" />
+        <h3>Influencer Marketing: Working with Online Personalities to Improve Brand Recognition</h3>
+        <button onclick="window.open('https://emerge.com.ph/influencer-marketing-working-with-online-personalities-to-improve-brand-recognition/', '_blank')">Read Here</button>
+      </div>
+      <div class="blog-card">
+        <img src="{{ url_for('static', filename='blog3.png') }}" alt="Blog 3" />
+        <h3>Social Proof in Digital Marketing: Harnessing the Power of Influence</h3>
+        <button onclick="window.open('https://emerge.com.ph/social-proof-digital-marketing/', '_blank')">Read Here</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Writing Works Section -->
+  <section id="works" class="works-section">
+    <h2 class="section-title">Sample Works</h2>
+    <div class="works-container">
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='ultramrf.png') }}" alt="Work 1" />
+        <h3>UltraMRF 1</h3>
+        <p>Poster Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='ultramrf2.png') }}" alt="Work 2" />
+        <h3>UltraMRF 2</h3>
+        <p>Poster Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='ultramrf3.png') }}" alt="Work 3" />
+        <h3>UltraMRF 3</h3>
+        <p>Poster Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='capitol 1.png') }}" alt="Work 4" />
+        <h3>Capitol Hill Hotel & Suites</h3>
+        <p>Social Media Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='capitol2.png') }}" alt="Work 5" />
+        <h3>Capitol Hill Hotel & Suites</h3>
+        <p>Social Media Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='converge1.png') }}" alt="Work 6" />
+        <h3>Converge HomeBase</h3>
+        <p>Social Media Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='converge2.png') }}" alt="Work 7" />
+        <h3>Converge HomeBase</h3>
+        <p>Social Media Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='gan1.png') }}" alt="Work 8" />
+        <h3>Dr.Gan Kam Ling</h3>
+        <p>Social Media Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='gan2.png') }}" alt="Work 9" />
+        <h3>Dr.Gan Kam Ling</h3>
+        <p>Social Media Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='gan3.png') }}" alt="Work 10" />
+        <h3>Dr.Gan Kam Ling</h3>
+        <p>Social Media Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='gan4.png') }}" alt="Work 11" />
+        <h3>Dr.Gan Kam Ling</h3>
+        <p>Social Media Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='nuts.png') }}" alt="Work 12" />
+        <h3>We're Nuts!</h3>
+        <p>Poster Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='medcity.png') }}" alt="Work 13" />
+        <h3>The Medical City Clark</h3>
+        <p>Poster Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='medcity2.png') }}" alt="Work 114" />
+        <h3>The Medical City Clark!</h3>
+        <p>Poster Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='orchard.png') }}" alt="Work 114" />
+        <h3>Orchard : A Community Place</h3>
+        <p>Poster Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='orchard2.png') }}" alt="Work 114" />
+        <h3>Orchard : A Community Place</h3>
+        <p>Poster Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='punto1.png') }}" alt="Work 114" />
+        <h3>Punto Central Luzon</h3>
+        <p>Poster Content, Marketing</p>
+      </div>
+      <div class="work-card">
+        <img src="{{ url_for('static', filename='punto2.png') }}" alt="Work 114" />
+        <h3>Punto Central Luzon</h3>
+        <p>Poster Content, Marketing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <img id="modal-image" src="" alt="Full Image" />
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contact-modal" class="contact-modal">
+    <div class="contact-modal-content">
+      <span class="contact-close-button" id="contact-close">&times;</span>
+      <h2>Full Contact Information</h2>
+      <p>Email: eudelamarlalei@gmail.com</p>
+      <p>Contact Number: +63 939 410 5189</p>
+      <p>WhatsApp: +63 939 410 5189</p>
+      <p>Telegram: +63 939 410 5189</p>
+      <p>SkypeID: 25adf392c7122141</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer-section">
+    <div class="footer-content">
+      <p>2600, Baguio City, Philippines</p>
+      <p>Marla Lei E. Eudela</p>
+      <p>&copy; 2025 Marla. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ChatAI Placeholder -->
+  <section id="chatai" style="display: none;"></section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('modal');
+      const modalImg = document.getElementById('modal-image');
+      const closeButton = document.querySelector('.close-button');
+    
+      // Attach click event to all work cards
+      const workCards = document.querySelectorAll('.work-card');
+      workCards.forEach(card => {
+        card.addEventListener('click', function() {
+          const imgSrc = card.querySelector('img').src;
+          modalImg.src = imgSrc; // Set the modal image source to the clicked card's image
+          modal.style.display = 'block';
+        });
+      });
+    
+      // Close the modal when the close button is clicked
+      closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+    
+      // Close the modal when clicking outside the modal content
+      window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactLink = document.getElementById('contact-link');
+      const contactModal = document.getElementById('contact-modal');
+      const contactClose = document.getElementById('contact-close');
+
+      // Open the contact modal on Contact link click
+      contactLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        contactModal.style.display = 'block';
+      });
+
+      // Close the modal when the close button is clicked
+      contactClose.addEventListener('click', function() {
+        contactModal.style.display = 'none';
+      });
+
+      // Close the modal when clicking outside the modal content
+      window.addEventListener('click', function(event) {
+        if (event.target === contactModal) {
+          contactModal.style.display = 'none';
+        }
+      });
+    });
+  </script>
+    
+</body>
+</html>
