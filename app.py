@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import joblib
-from sklearn.feature_extraction.text import TfidVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
 app = Flask(__name__)
 
