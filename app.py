@@ -39,4 +39,4 @@ def chat_response():
         return jsonify({"response": "Please provide input."})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
